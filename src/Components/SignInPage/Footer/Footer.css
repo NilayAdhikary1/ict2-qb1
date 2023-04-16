@@ -1,0 +1,15 @@
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-text{
+    font-size: 13px;
+    color: #5e5e5e;
+}
+
+.chat{
+    font-size: 13px;
+    text-decoration: none;
+    color: #00AEEF;
+}

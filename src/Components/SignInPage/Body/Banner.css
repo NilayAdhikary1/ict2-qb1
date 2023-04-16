@@ -1,0 +1,26 @@
+.banner{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.banner-head{
+    font-size: 36px;
+    color: #333333;
+}
+
+.banner-text{
+    font-size: 16px;
+    color: #5e5e5e;
+}
+
+.learn{
+    width: 150px;
+    height : 40px;
+    border-radius: 20px;
+    background-color: #568F90;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+}

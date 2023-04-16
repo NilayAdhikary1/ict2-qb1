@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+    overflow-x: hidden;
+    height : 675px;
+    background-color : #e4e4e4;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.container2{
+    overflow-x: hidden;
+}

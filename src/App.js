@@ -4,11 +4,9 @@ import Body from './Components/SignInPage/Body/Body';
 import Home from '../src/Components/Home/Home'
 import { useState } from 'react';
 
-const PrivateRoute = (userAuthenticated, ...props) => {
+const PrivateRoute = ({userAuthenticated, ...props}) => {
   return userAuthenticated?
-    <>
-      <Outlet/>
-    </>
+    <Outlet/>
   :
     <Navigate replace to='/login'/>
 }

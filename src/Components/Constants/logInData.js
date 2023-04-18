@@ -1,6 +1,5 @@
 
-
-export default data = [
+export const data = [
     {userName : 'Cognizant'},
-    {password : 'Hello1234'}
+    {userPassword : 'Hello1234'}
 ]

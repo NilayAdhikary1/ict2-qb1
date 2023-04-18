@@ -4,13 +4,13 @@ import LogIn from './LogIn';
 import './Body.css';
 import Footer from '../Footer/Footer';
 
-function Body() {
+function Body({isUserAuthenticated}) {
   return (
     <>
       <div className='container1'>
           <div className="row justify-content-center child">
               <Banner/>
-              <LogIn/>
+              <LogIn isUserAuthenticated={isUserAuthenticated}/>
           </div>
       </div>
 

@@ -1,13 +1,29 @@
-
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter,Outlet,Route, Routes } from 'react-router-dom';
 import Body from './Components/SignInPage/Body/Body';
+import Home from '../src/Components/HomePage/Home'
+import { useState } from 'react';
+
+// const PrivateRoute = ({userAuthenticated, ...props}) => {
+//   return userAuthenticated && <Outlet/>
+//   // :
+//   //   <Navigate replace to='/login'/>
+// }
 
 function App() {
+
+  const [userAuthenticated, isUserAuthenticated] = useState(false);
+
   return (
     <BrowserRouter>
       <div className="App">
-        <Body/>
+        <Routes>
+          <Route path='/login' element={<Body isUserAuthenticated={isUserAuthenticated}/>} />
+          
+          {/* <Route path='/' element={<PrivateRoute userAuthenticated={userAuthenticated}/>}> */}
+          <Route path='/' element={<Home/>}/>
+          {/* </Route>  */}
+        </Routes>
       </div>
     </BrowserRouter>
   );

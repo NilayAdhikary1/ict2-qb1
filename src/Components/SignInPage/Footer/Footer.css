@@ -1,6 +1,7 @@
 .foot{
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .foot-text{
@@ -12,4 +13,10 @@
     font-size: 13px;
     text-decoration: none;
     color: #00AEEF;
+}
+
+@media (max-width : 576px){
+    .foot{
+        flex-direction: column;
+    }
 }

@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .signInText{
@@ -21,19 +22,19 @@
     color: #333333;
 }
 
-.size{
+.size {
     font-size: 14px;
     background-color: #F2F2F2;
     color: #5e5e5e;
 }
 
-.forgot{
+.forgot {
     text-decoration: none;
     color: #00AEEF;
     float: right;
 }
 
-.logInBtn{
+.logInBtn {
     width: 150px;
     height : 40px;
     border-radius: 20px;
@@ -42,4 +43,39 @@
     font-size: 14px;
     color: #ffffff;
     font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width : 576px){
+    .cover{
+        background-color: #ffffff;
+        width: 18rem;
+        height: 18rem;
+        border-radius: 1rem;
+        box-shadow: 0 0.188em 1.550em rgba(199, 186, 179, 0.537);
+        display: flex;
+        flex-direction: column;
+        justify-content : center;
+        padding: 2rem;
+    }
+    .signInText{
+        font-size: 25px;
+        color: #333333;
+    }
+    .size {
+        font-size: 14px;
+        background-color: #F2F2F2;
+        color: #5e5e5e;
+    }
+    .logInBtn {
+        width: 130px;
+        height : 40px;
+        border-radius: 20px;
+        margin: auto;
+        background-color: #0D3563;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+    }
 }

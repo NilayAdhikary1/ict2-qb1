@@ -23,7 +23,7 @@ function App() {
           <Route path='/login' element={<Body isUserAuthenticated={isUserAuthenticated}/>} />
           
           <Route path='/' element={<PrivateRoute userAuthenticated={userAuthenticated}/>}>
-          <Route path='/' element={<Home/>}/>
+            <Route path='/' element={<Home/>}/>
           </Route> 
         </Routes>
       </div>

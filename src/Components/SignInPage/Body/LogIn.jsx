@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Logo_Desktop_Tab from '../../Images/Logo_Desktop_Tab.png';
+import Logo_Mobile from '../../Images/Logo_Mobile.png';
 import './LogIn.css';
 import { data } from '../../Constants/logInData';
 import { useNavigate } from 'react-router-dom';
@@ -35,7 +36,14 @@ function LogIn({isUserAuthenticated}) {
 
   return (
     <div className='col-md-5 col-lg-5 logInCol'>
-        <img src={Logo_Desktop_Tab} alt="Hello world" />
+
+        <picture>
+            <source media="(min-width: 576px)" srcset={Logo_Desktop_Tab}/>
+            <source media="(min-width: 768px)" srcset={Logo_Desktop_Tab}/>
+            <source media="(min-width: 992px)" srcset={Logo_Desktop_Tab}/>
+            
+            <img src={Logo_Mobile} alt="App Logo"/>
+        </picture>
 
         <form className='cover mt-4'>
             <div className="mt-3 mb-3">

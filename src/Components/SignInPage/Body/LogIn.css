@@ -49,8 +49,8 @@
 @media (max-width : 576px){
     .cover{
         background-color: #ffffff;
-        width: 18rem;
-        height: 18rem;
+        width: 19rem;
+        height: 21rem;
         border-radius: 1rem;
         box-shadow: 0 0.188em 1.550em rgba(199, 186, 179, 0.537);
         display: flex;

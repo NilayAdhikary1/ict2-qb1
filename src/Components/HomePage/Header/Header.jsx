@@ -16,7 +16,6 @@ function Header() {
     return (
         <div className="row justify-content-between">
             <div className="col-md-2 col-lg-3 col-sm-12 img">
-                {/* <img src={Logo_Desktop_Tab} alt="Hello world" /> */}
                 <picture>
                     <source media="(min-width: 576px)" srcset={Logo_Desktop_Tab}/>
                     <source media="(min-width: 768px)" srcset={Logo_Desktop_Tab}/>

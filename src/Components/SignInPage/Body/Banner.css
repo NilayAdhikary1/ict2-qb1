@@ -3,6 +3,7 @@
     flex-direction: column;
     text-align: left;
     justify-content: center;
+    padding: 20px;
 }
 
 .banner-head{
@@ -16,6 +17,7 @@
 }
 
 .learn{
+    border: 2px solid #568F90;
     width: 150px;
     height : 40px;
     border-radius: 20px;
@@ -23,4 +25,9 @@
     font-size: 12px;
     color: #ffffff;
     font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 576px){
+
 }
